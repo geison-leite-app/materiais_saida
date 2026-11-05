@@ -1,0 +1,32 @@
+{
+  "name": "materiais-saida-obra",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Controle de saida de materiais do estoque para as obras",
+  "scripts": {
+    "dev": "vite --host",
+    "dev:https": "vite --host --mode https",
+    "dev:vercel": "npx --yes vercel dev",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@zxing/browser": "^0.1.5",
+    "@zxing/library": "^0.21.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.0.6",
+    "vitest": "^3.2.4"
+  }
+}

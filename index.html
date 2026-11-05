@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0C76BC" />
+    <meta name="description" content="Controle de saída de materiais do estoque para as obras." />
+    <title>Materiais · Saída de obra</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230C76BC'/%3E%3Cpath d='M32 14l16 9v18l-16 9-16-9V23l16-9z' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M16 23l16 9 16-9M32 32v18' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <script>
+      (function () {
+        try {
+          var salvo = localStorage.getItem('mso:theme');
+          var prefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.dataset.theme = salvo || (prefereEscuro ? 'dark' : 'light');
+        } catch (erro) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header class="app-header">
+      <div class="app-header__inner">
+        <a class="brand" href="/" aria-label="Materiais, saída de obra">
+          <span class="brand__mark" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" />
+              <path d="m4 7.5 8 4.5 8-4.5M12 12v9" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <strong>Materiais</strong>
+            <small>Saída de obra</small>
+          </span>
+        </a>
+
+        <button
+          class="icon-btn"
+          type="button"
+          data-theme-toggle
+          aria-label="Alternar tema"
+          aria-pressed="false"
+        >
+          <svg
+            class="icon icon--moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z" />
+          </svg>
+          <svg
+            class="icon icon--sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="app-main" id="app"></main>
+
+    <footer class="app-footer">
+      <span>Versão 0.2.0 · Fase 2</span>
+      <span>Uso interno · Kairos</span>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

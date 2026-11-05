@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light;
+
+  --brand: #0c76bc;
+  --brand-strong: #0a63a0;
+  --brand-text: #0a63a0;
+  --brand-soft: #e8f3fb;
+  --brand-contrast: #ffffff;
+  --accent: #0f9d8a;
+
+  --bg: #f4f7fa;
+  --bg-glow: rgba(12, 118, 188, 0.12);
+  --surface: #ffffff;
+  --surface-soft: #eef4f9;
+  --border: #dbe6ef;
+  --border-strong: #c4d5e2;
+
+  --text: #0b1b2b;
+  --text-muted: #5a6c7d;
+  --text-faint: #8296a8;
+
+  --success: #0f7b5f;
+  --success-soft: #e2f5ee;
+  --warning: #9a6400;
+  --warning-soft: #fdf1da;
+  --danger: #b3261e;
+  --danger-soft: #fbe7e5;
+
+  --focus: #0c76bc;
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(11, 27, 43, 0.06);
+  --shadow-sm: 0 2px 8px rgba(11, 27, 43, 0.07);
+  --shadow-md: 0 10px 30px rgba(11, 27, 43, 0.12);
+  --shadow-brand: 0 12px 24px rgba(12, 118, 188, 0.28);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, 'Roboto', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2.125rem;
+
+  --header-h: 62px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 180ms;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --brand: #0c76bc;
+  --brand-strong: #1687d3;
+  --brand-text: #7cc4f0;
+  --brand-soft: #102a3d;
+  --brand-contrast: #ffffff;
+  --accent: #35c3ae;
+
+  --bg: #080f17;
+  --bg-glow: rgba(12, 118, 188, 0.2);
+  --surface: #101b26;
+  --surface-soft: #16222e;
+  --border: #21303e;
+  --border-strong: #2c3f50;
+
+  --text: #e9f1f8;
+  --text-muted: #a3b6c6;
+  --text-faint: #7b90a2;
+
+  --success: #4fd1a5;
+  --success-soft: #0e2f27;
+  --warning: #f3c05b;
+  --warning-soft: #33260a;
+  --danger: #ff8a80;
+  --danger-soft: #351310;
+
+  --focus: #7cc4f0;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 14px 34px rgba(0, 0, 0, 0.55);
+  --shadow-brand: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
